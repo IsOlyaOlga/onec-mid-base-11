@@ -211,6 +211,10 @@
           <dataPath xsi:type="form:DataPath">
             <segments>Объект.ДО_СогласованнаяСкидка</segments>
           </dataPath>
+          <handlers>
+            <event>OnChange</event>
+            <name>ДО_СогласованнаяСкидкаПриИзменении</name>
+          </handlers>
           <extendedTooltip>
             <name>ДО_СогласованнаяСкидкаРасширеннаяПодсказка</name>
             <id>171</id>
@@ -2056,6 +2060,11 @@
     <use>
       <common>true</common>
     </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ПересчитатьТаблицу</name>
+      </handler>
+    </action>
     <currentRowUse>Auto</currentRowUse>
   </formCommands>
   <commandInterface>
